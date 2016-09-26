@@ -11,6 +11,7 @@ $config->db->name     = 'zentaophp';
 $config->db->user     = 'root'; 
 $config->db->password = '123456';
 
+
 /* To use master and slave database feature, uncomment this.
 $config->slaveDB->host     = 'localhost';
 $config->slaveDB->port     = '3306';
