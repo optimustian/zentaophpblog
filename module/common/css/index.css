@@ -1,0 +1,6 @@
+.right{margin-left:16.66666667%;}
+.left {background: #e84c3d;width: 16.66666667%;height: 100%;position: fixed;left: 0;top: 0;z-index: 9;}
+.face-img{padding:20% 20% 10px 20%;	}
+.face-img img{height:100%;width:100%;border-radius: 50%;-webkit-transition:-webkit-transform 1s ease-out;-moz-transition:-moz-transform 1s ease-out-o-transition:-o-transform 1s ease-out;-ms-transition:-ms-transform 1s ease-out;}
+.face-img img:hover {-webkit-transform:rotateZ(360deg);-moz-transform:rotateZ(360deg);-o-transform:rotateZ(360deg);-ms-transform:rotateZ(360deg);transform:rotateZ(360deg);}
+.face-name {font-family:"Microsoft Yahei";font-size:1.5em;color: #fff;text-align: center;text-shadow: 2px 2px 0px rgba(0,0,0,0.2);}
