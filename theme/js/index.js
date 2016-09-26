@@ -9,13 +9,19 @@ window.onscroll = function () {
 }
 
 $(function () {
-	var i=-1;
+	$('#calendar').datepicker({
+		inline: true,
+		firstDay: 1,
+		showOtherMonths: true,
+		dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+	});
+	var navi=-1;
 	$('.list-group').find('.categorychild').each(function(index, item){
 		$(this).click(function(){
 			//$('.nav-list').toggle();
 			var childname=$(this).attr('data-child');
 			var liststatus=$('#'+childname).css('display');//alert(liststatus);
-			if(i!=index && liststatus!='none'){//alert(1);
+			if(navi!=index && liststatus!='none'){//alert(1);
 				$('.nav-list').removeClass('am-animation-slide-left');
 				$('.nav-list').addClass('am-animation-slide-left');
 				$('.nav-list').css('display','none');
@@ -31,7 +37,7 @@ $(function () {
 				$('.nav-list').css('display','none');
 			}
 			//$('.nav-list').html($(this).html());
-			i=index;
+			navi=index;
 		});
 	});
 });

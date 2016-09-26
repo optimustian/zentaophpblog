@@ -10,7 +10,7 @@
  *  May you share freely, never taking more than you give.
  */
 ?>
-<?php include dirname(__FILE__) . '/index_header.html.php';?>
+<?php include '../../common/view/index_header.html.php';?>
 <?php 
 	foreach ($category as $key => $value) {
 		echo "<div class=\"nav-list\" id=\"{$value->parent->ename}\">";
@@ -77,14 +77,15 @@
 		
 	  </div>
 	  <div class="am-u-md-3">
-			<?php include dirname(__FILE__) . '/right_nav.html.php';?>
+	  <?php include '../../common/view/right_nav.html.php';?>
 	  </div>
 	  <div style="clear: both;"></div>
 	  
   </div>
   
 </div>
-<?php include dirname(__FILE__) . '/index_foolter.html.php';?>
- <?php include dirname(__FILE__) . '/gotop.html.php';?>
+<?php include '../../common/view/index_foolter.html.php';?>
+<?php include '../../common/view/gotop.html.php';?>
 </body>
+<?php include '../../common/view/index_foolterjs.html.php';?>
 </html>

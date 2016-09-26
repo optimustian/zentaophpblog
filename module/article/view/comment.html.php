@@ -1,6 +1,4 @@
-<div style="text-align:center"><div id="cyReward" role="cylabs" data-use="reward"></div></div>
-<script type="text/javascript" charset="utf-8" src="http://changyan.itc.cn/js/lib/jquery.js"></script>
-<script type="text/javascript" charset="utf-8" src="https://changyan.sohu.com/js/changyan.labs.https.js?appid=cyrIUKKWu"></script>
+
 
 <div id="SOHUCS" sid="blog_<?php echo $article->id; ?>" ></div> 
 <script type="text/javascript"> 

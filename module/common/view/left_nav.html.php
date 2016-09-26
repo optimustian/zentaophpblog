@@ -9,11 +9,13 @@
 	</header>
 
 	<div class="list-group am-center">
-	  <div class="list-group-item"><a class="nav-item">收拾收拾</a></div>
-	   <div class="list-group-item"><a class="nav-item">收拾</a></div>
-	   <div class="list-group-item"><a class="nav-item">收拾收拾dfb</a></div>
-	   <div class="list-group-item"><a class="nav-item">收拾</a></div>
-	   <div class="list-group-item"><a class="nav-item">收拾收拾</a></div>
-	    <div class="list-group-item"><a class="nav-item">收拾收拾dfb</a></div>
+	  <div class="list-group-item"><a href="<?php echo $webRoot; ?>" class="nav-item">首页</a></div>
+		<?php 
+			foreach ($category as $key => $value) {
+			 echo "<div class=\"list-group-item categorychild\" data-child=\"{$value->parent->ename}\">";
+			 echo "<a class=\"nav-item\">{$value->parent->cname}</a></div>";
+			}
+		?>
+		<div class="list-group-item"><a class="nav-item">关于</a></div>
 	</div>
   </div>
